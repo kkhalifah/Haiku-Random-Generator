@@ -4,18 +4,21 @@
     <meta charset="utf-8">
     <title>Haiku Random Generator</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
   </head>
   <body ng-app = "haikuModule" ng-controller='haikuController'>
      <main>
+<div id="headline">
+  <h1 >Haiku poems date from 9th century Japan to the present day.</h1> <h2>Haiku is more than a type of poem; it is a way of looking at the physical world and seeing something deeper, like the very nature of existence.
+  </h2>
+</div>
 
-<h1 id="headline">Haiku poems date from 9th century Japan to the present day. Haiku is more than a type of poem; it is a way of looking at the physical world and seeing something deeper, like the very nature of existence.
-</h1>
 <div class="poem">
   <h1 class="press">Press to generate a haiku</h1>
 
   <button ng-click="displayPoem()" class="submitButton" type="button" name="button">Press Here</button>
 
-          <p ng-repeat=" lines in finalPoem track by $index" class="line">{{lines}} </p>
+          <p ng-repeat=" lines in finalPoem track by $index" class="haikuPoem">{{lines}} </p>
 </div>
 
 
