@@ -13,13 +13,9 @@
 <div class="poem">
   <h1 class="press">Press to generate a haiku</h1>
 
-  <button ng-click="addFiveSyllablesFirst()" class="submitButton" type="button" name="button">Press Here</button>
+  <button ng-click="displayPoem()" class="submitButton" type="button" name="button">Press Here</button>
 
-
-  <!-- <div class="wordBox">
-        <span ng-class="item.cls" ng-repeat="line in lines track by $index">{{line.name}}</span>
-      </div> -->
-          <p>  <span ng-repeat="lineOne in fiveSyllablesFirst track by $index" class="line">{{lineOne}} </span></p>
+          <p ng-repeat=" lines in finalPoem track by $index" class="line">{{lines}} </p>
 </div>
 
 

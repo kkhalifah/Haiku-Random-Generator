@@ -4,12 +4,11 @@
 //controller
 app.controller('haikuController', function($scope, haikuFactory, $http){
   console.log("controller is connected");
-    $scope.fiveSyllablesFirst = [];
 
-  $scope.addFiveSyllablesFirst = function() {
-      $scope.fiveSyllablesFirst.push(
-          haikuFactory.getRandomFirstLine()
-      );
+  $scope.displayPoem = function() {
+//arr to repeat
+      $scope.finalPoem =
+          haikuFactory.poem();
   };
 
 });
