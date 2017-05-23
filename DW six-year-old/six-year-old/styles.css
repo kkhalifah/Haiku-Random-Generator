@@ -1,0 +1,26 @@
+.dotted {
+    border: 1px dotted #333;
+    padding-left: .3em;
+    border-radius: 20% / 40%;
+    margin-right: .3em;
+}
+
+.colored-blue {
+    color: blue;
+}
+
+.colored-purple {
+    color: purple;
+}
+
+.colored-red {
+    color: red;
+}
+
+.wide {
+    letter-spacing: 4px;
+}
+
+.dark {
+    font-weight: bold;
+}

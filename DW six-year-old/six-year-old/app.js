@@ -1,25 +1,3 @@
-
-//module
-  var app = angular.module('haikuModule', []);
-//controller
-app.controller('haikuController', function($scope, haikuFactory, $http){
-  console.log("controller is connected");
-  $scope.addLine = function (line){
-    console.log(line);
-    //method
-    //line or lines?
-    haikuFactory.setLine(line);
-  //  $location.path('/output')
-  }
-
- };
-});
-
-
-//what is $location to partial?
-//app.controller('formControl', function($scope , madFactory, $location){
-// });
-
 (function() { // <-- It's an IIFE
 var app = angular.module("sixYearOldApp", []); // create the module
 
